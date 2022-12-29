@@ -3,7 +3,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintArgs": [
         "--rcfile=${workspaceFolder}/.pylintrc",
-        "--extension-pkg-whitelist=PyQt5"
+        "--extension-pkg-whitelist=PyQt5, pygame"
     ],
     "pylint.importStrategy": "fromEnvironment",
     "pylint.path": [
