@@ -25,8 +25,10 @@
 import os.path
 import sys
 from os import listdir
-from os.path import isfile, join
+from os.path import abspath, dirname, isfile, join
+from pydoc import importfile
 
+from memoization import cached
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QSize
 from PyQt5.QtGui import QFont, QIcon
@@ -42,39 +44,42 @@ from PyQt5.QtWidgets import (
     QToolBar,
 )
 
-global e
-e = 0
+global E
+E = 0
+global TEST
+TEST = []
+LINKS_PATH = "links"
+global ExternalLinks
 
-global test
-test = []
 
-linkpath = "./links"
+@cached
+def get_external_links():
+    LINK_FILES = [f for f in listdir(f"./{LINKS_PATH}")]
+    return [f for f in LINK_FILES if isfile(join(LINKS_PATH, f))]
 
 
-EL = [f for f in listdir(linkpath) if isfile(join(linkpath, f))]
-for i in EL:
-    br = i.removesuffix(".py")
-    exec("from links import " + br)
+ExternalLinks = get_external_links()
 
 
 def refresh():
-    global EL
-    EL = [f for f in listdir(linkpath) if isfile(join(linkpath, f))]
-    for i in EL:
-        br = i.removesuffix(".py")
-        exec("from links import " + br)
+    current_dir = dirname(abspath(__file__))
+    for i in ExternalLinks:
+        importfile(f"{current_dir}/{LINKS_PATH}/{i}")
 
 
-def goto(site):
+refresh()
+
+
+def goto(site: str):
     hi = getattr(sys.modules[__name__], site)
-    hi.RUN(window)
+    hi.RUN(window)  # Using Links Module for Sites
 
 
 def URL(site):
     Window.hisstory(Window, site)
-    if "." in site:
+    if "." in site:  # Links have reverse dns format
         site = site.split(".")[1] + "_" + site.split(".")[0]
-        if site + ".py" in EL:
+        if site + ".py" in ExternalLinks:
             goto(site)
     else:
         pass
@@ -83,8 +88,7 @@ def URL(site):
 class Window(QMainWindow):
     def showSites(self):
         self.initUI()
-
-        for i in EL:
+        for i in ExternalLinks:
             br = i.removesuffix(".py")
             bruh = br.split("_")[1] + "." + br.split("_")[0]
             self.site = QListWidgetItem(bruh)
@@ -93,25 +97,22 @@ class Window(QMainWindow):
 
     def herlecture(self):
         self.initUI()
-
         txt = os.path.isfile("data/history.txt")
         if txt:
             f = open("data/history.txt", "r")
-
-            global test
-            global e
-            if e == 0:
+            global TEST
+            global E
+            if E == 0:
                 for i in f:
                     self.ello = QListWidgetItem(i)
                     self.list_widget.addItem(self.ello)
                     self.list_widget.show()
-                    test.append(self.ello)
-                e = 1
+                    TEST.append(self.ello)
+                E = 1
             else:
-
                 self.list_widget.hide()
-                test = []
-                e = 0
+                TEST = []
+                E = 0
         else:
             self.ello = QLabel(
                 "you haven't gone to any sites yet or your history file is absent. go to any site and it should be back.",
@@ -137,7 +138,6 @@ class Window(QMainWindow):
 
     def searchBtn(self):
         site = self.addressLineEdit.text()
-
         URL(site)
 
     def __init__(self):
