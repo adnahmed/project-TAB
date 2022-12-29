@@ -1,33 +1,46 @@
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣝⣿⣿⣿⣿⣟⣞⣿⣿⠻⣿⡻⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢿⣿⣿⣳⣝⢿⡯⣿⣿⡝⣞⡯⡇⢯⣫⡫⣯⢿⡻⣽⣿⡻⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣕⢽⢿⣿⣿⣻⡺⣕⢟⢿⣳⢕⢯⡯⡽⡷⣝⢾⠹⣽⡝⡆⣧⢿⣝⢺⢝⣜⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣮⣏⢿⡹⣓⡭⣿⣷⣕⢽⡳⡍⡧⡣⣛⣼⡫⣱⡿⡕⡹⡵⣏⢎⣖⢑⣿⢿⢝⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣾⣳⢽⢮⣿⡘⣞⢜⢗⢝⢼⡽⡌⣲⡳⡅⡷⡝⡌⡪⣻⢜⢌⢎⢢⢯⢇⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢓⠹⣓⣯⡲⡱⡽⣸⢸⡯⣪⢮⢫⢪⢣⠣⡊⡪⣗⡥⡕⢅⢺⢑⢵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⢂⠱⣹⣞⢌⡿⣜⡺⣝⢜⠕⡣⡣⡑⢜⢐⡼⡯⡟⠜⠁⠄⠄⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⠂⠌⡂⣷⡣⢯⢲⡕⡕⠅⠌⡘⡜⢤⠱⡸⡝⠁⠄⠄⠄⠄⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡐⡨⠐⠨⠻⡇⠇⡇⣫⢎⠌⠄⡂⠪⡪⠊⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡂⠡⠡⡑⠄⡑⢘⠘⠂⠁⠐⠈⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠌⡂⡑⡐⠅⣂⠂⡀⠂⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠂⡂⢌⠂⣝⠂⢫⠄⠐⡸⠈⢊⢂⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡐⠠⡑⢸⡅⠌⡀⡗⡸⡈⠄⠄⢑⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠅⢌⢸⡂⠅⡀⢣⢳⠄⠄⠂⢐⠕⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡑⡐⣜⡅⢂⠐⢸⢸⠄⠐⠄⠄⢇⠂⠄⠄⠄⠄⠄⠄⠄⣺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⠌⠔⣜⡎⢀⠂⢸⢸⠄⠄⠂⠄⢕⠁⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡡⢑⢀⠂⡂⢈⠄⠠⠄⠈⡀⠄⠑⠁⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡢⠂⡅⣐⣀⣂⣁⠄⡁⢀⠠⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⢿⢟⡟⣿⣿⣿⣿⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣬⣐⣌⣎⣒⢆⢇⢏⢎⢖⢔⢆⢄⣀⣀⣀⡠⣔⠶⡽⣝⢵⡫⢮⢳⡱⡿⣽⣯⣿⣯⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣯⣿⣷⣿⣾⢿⣯⢿⢽⢞⢗⢟⡝⡮⣺⣘⡮⡮⢕⠕⡜⡜⡜⣕⡵⣽⢯⣷⣿⣾⡿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣞⣯⡛⡎⣝⣬⣧⣷⣳⣷⢷⣯⡳⡱⣱⢵⣵⣳⡾⣞⣷⣿⣽⣿⣷⣿⣾⣿⣿⣿
-#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣷⣿⣿⣿⣷⣿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣝⣿⣿⣿⣿⣟⣞⣿⣿⠻⣿⡻⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢿⣿⣿⣳⣝⢿⡯⣿⣿⡝⣞⡯⡇⢯⣫⡫⣯⢿⡻⣽⣿⡻⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣕⢽⢿⣿⣿⣻⡺⣕⢟⢿⣳⢕⢯⡯⡽⡷⣝⢾⠹⣽⡝⡆⣧⢿⣝⢺⢝⣜⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣮⣏⢿⡹⣓⡭⣿⣷⣕⢽⡳⡍⡧⡣⣛⣼⡫⣱⡿⡕⡹⡵⣏⢎⣖⢑⣿⢿⢝⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣾⣳⢽⢮⣿⡘⣞⢜⢗⢝⢼⡽⡌⣲⡳⡅⡷⡝⡌⡪⣻⢜⢌⢎⢢⢯⢇⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢓⠹⣓⣯⡲⡱⡽⣸⢸⡯⣪⢮⢫⢪⢣⠣⡊⡪⣗⡥⡕⢅⢺⢑⢵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⢂⠱⣹⣞⢌⡿⣜⡺⣝⢜⠕⡣⡣⡑⢜⢐⡼⡯⡟⠜⠁⠄⠄⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⠂⠌⡂⣷⡣⢯⢲⡕⡕⠅⠌⡘⡜⢤⠱⡸⡝⠁⠄⠄⠄⠄⠄⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡐⡨⠐⠨⠻⡇⠇⡇⣫⢎⠌⠄⡂⠪⡪⠊⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡂⠡⠡⡑⠄⡑⢘⠘⠂⠁⠐⠈⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠌⡂⡑⡐⠅⣂⠂⡀⠂⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠂⡂⢌⠂⣝⠂⢫⠄⠐⡸⠈⢊⢂⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡐⠠⡑⢸⡅⠌⡀⡗⡸⡈⠄⠄⢑⠄⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠅⢌⢸⡂⠅⡀⢣⢳⠄⠄⠂⢐⠕⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡑⡐⣜⡅⢂⠐⢸⢸⠄⠐⠄⠄⢇⠂⠄⠄⠄⠄⠄⠄⠄⣺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⠌⠔⣜⡎⢀⠂⢸⢸⠄⠄⠂⠄⢕⠁⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡡⢑⢀⠂⡂⢈⠄⠠⠄⠈⡀⠄⠑⠁⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡢⠂⡅⣐⣀⣂⣁⠄⡁⢀⠠⠄⠄⠄⠄⠄⠄⠄⠄⢸⣿⣿⣿⢿⢟⡟⣿⣿⣿⣿⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣬⣐⣌⣎⣒⢆⢇⢏⢎⢖⢔⢆⢄⣀⣀⣀⡠⣔⠶⡽⣝⢵⡫⢮⢳⡱⡿⣽⣯⣿⣯⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣯⣿⣷⣿⣾⢿⣯⢿⢽⢞⢗⢟⡝⡮⣺⣘⡮⡮⢕⠕⡜⡜⡜⣕⡵⣽⢯⣷⣿⣾⡿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣞⣯⡛⡎⣝⣬⣧⣷⣳⣷⢷⣯⡳⡱⣱⢵⣵⣳⡾⣞⣷⣿⣽⣿⣷⣿⣾⣿⣿⣿
+# ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣷⣿⣿⣿⣷⣿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
+import os.path
 import sys
-from PyQt5.QtWidgets import QMainWindow, QApplication, QToolBar, QPushButton, QLineEdit, QLabel, QScrollBar, QListWidget, QListWidgetItem
+from os import listdir
+from os.path import isfile, join
+
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QIcon, QFont
 from PyQt5.QtCore import QSize
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtGui import QFont, QIcon
+from PyQt5.QtWidgets import (
+    QApplication,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QMainWindow,
+    QPushButton,
+    QScrollBar,
+    QToolBar,
+)
 
 global e
 e = 0
@@ -37,25 +50,25 @@ test = []
 
 linkpath = "./links"
 
-from os import listdir
-import os.path
-from os.path import isfile, join
 
 EL = [f for f in listdir(linkpath) if isfile(join(linkpath, f))]
 for i in EL:
-    br = i.removesuffix('.py')
+    br = i.removesuffix(".py")
     exec("from links import " + br)
+
 
 def refresh():
     global EL
     EL = [f for f in listdir(linkpath) if isfile(join(linkpath, f))]
     for i in EL:
-        br = i.removesuffix('.py')
+        br = i.removesuffix(".py")
         exec("from links import " + br)
+
 
 def goto(site):
     hi = getattr(sys.modules[__name__], site)
     hi.RUN(window)
+
 
 def URL(site):
     Window.hisstory(Window, site)
@@ -66,13 +79,13 @@ def URL(site):
     else:
         pass
 
-class Window(QMainWindow):
 
+class Window(QMainWindow):
     def showSites(self):
         self.initUI()
-        
+
         for i in EL:
-            br = i.removesuffix('.py')
+            br = i.removesuffix(".py")
             bruh = br.split("_")[1] + "." + br.split("_")[0]
             self.site = QListWidgetItem(bruh)
             self.list_widget.addItem(self.site)
@@ -95,12 +108,15 @@ class Window(QMainWindow):
                     test.append(self.ello)
                 e = 1
             else:
-                
+
                 self.list_widget.hide()
                 test = []
                 e = 0
         else:
-            self.ello = QLabel("you haven't gone to any sites yet or your history file is absent. go to any site and it should be back.", self)
+            self.ello = QLabel(
+                "you haven't gone to any sites yet or your history file is absent. go to any site and it should be back.",
+                self,
+            )
             self.find = QPushButton("find sites here!", self)
             self.find.clicked.connect(self.showSites)
             self.layout.addRow(self.ello)
@@ -133,7 +149,7 @@ class Window(QMainWindow):
 
         self.setWindowTitle("TAB")
         self.setWindowIcon(QIcon("icons/tab.png"))
-        self.setGeometry(200,200, 900,600)
+        self.setGeometry(200, 200, 900, 600)
 
         toolbar = QToolBar()
         self.addToolBar(toolbar)
@@ -173,6 +189,7 @@ class Window(QMainWindow):
         self.scroll_bar = QScrollBar(self)
         self.scroll_bar.setStyleSheet("background : lightgreen;")
         self.list_widget.setVerticalScrollBar(self.scroll_bar)
+
 
 app = QApplication(sys.argv)
 window = Window()

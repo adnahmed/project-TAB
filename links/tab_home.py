@@ -1,22 +1,23 @@
+import pygame
+from pygame import mixer
+
+
 def RUN(window):
-    import pygame
-    from pygame import mixer
-    import os
-    pygame.init()
     mixer.init()
+    pygame.init()
     mixer.music.load("links\\home\\A.wav")
     mixer.music.set_volume(1)
     pygame.display.set_caption("home")
-    
+
     speed = [10, 10]
     clock = pygame.time.Clock()
     logo = pygame.image.load("links\\home\\a.png")
     rect = logo.get_rect()
-    
+
     fps = 60
     size = width, height = 800, 500
     screen = pygame.display.set_mode(size)
-    programIcon = pygame.image.load('icons\\tab.png')
+    programIcon = pygame.image.load("icons\\tab.png")
     pygame.display.set_icon(programIcon)
     running = True
     while running:
