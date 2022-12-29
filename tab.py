@@ -64,7 +64,11 @@ ExternalLinks = get_external_links()
 def refresh():
     current_dir = dirname(abspath(__file__))
     for i in ExternalLinks:
-        importfile(f"{current_dir}/{LINKS_PATH}/{i}")
+        setattr(
+            sys.modules[__name__],
+            i.removesuffix(".py"),
+            importfile(f"{current_dir}/{LINKS_PATH}/{i}"),
+        )
 
 
 refresh()
