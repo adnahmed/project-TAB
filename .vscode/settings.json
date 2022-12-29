@@ -1,0 +1,16 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--rcfile=${workspaceFolder}/.pylintrc",
+        "--extension-pkg-whitelist=PyQt5"
+    ],
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.path": [
+        "poetry",
+        "run",
+        "python",
+        "-m",
+        "pylint"
+    ],
+}
